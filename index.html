@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <h3>Calc</h3>
+        <div class="display-screen">
+          <div class="display-value" id="result"></div>
+        </div>
+        <div class="keypad">
+          <div class="key" onClick="insert(7)">7</div>
+          <div class="key" onClick="insert(8)">8</div>
+          <div class="key" onClick="insert(9)">9</div>
+          <div
+            class="key"
+            style="background-color: #647299; color: white"
+            onclick="delnum()"
+          >
+    Del
+</div>
+<div class="key" onClick="insert(4)">4</div>
+<div class="key" onClick="insert(5)">5</div>
+<div class="key" onClick="insert(6)">6</div>
+<div class="key" onClick="insert('+')">+</div>
+<div class="key" onClick="insert(1)">1</div>
+<div class="key" onClick="insert(2)">2</div>
+<div class="key" onClick="insert(3)">3</div>
+<div class="key" onClick="insert('-')">-</div>
+<div class="key" onClick="insert('.')">.</div>
+<div class="key" onClick="insert(0)">0</div>
+<div class="key" onClick="insert('/')">/</div>
+<div class="key" onClick="insert('*')">X</div>
+
+<div
+  class="key1"
+  style="background-color: #647299; color: white"
+  onClick="clearScreen()">
+  
+Reset
+</div>
+<div
+  class="key1"
+  style="background-color: #d13f30; color: white"
+  onclick="calculate()"
+>
+  =
+</div>
+</div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
